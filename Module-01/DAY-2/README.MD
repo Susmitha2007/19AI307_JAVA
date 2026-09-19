@@ -1,58 +1,54 @@
-# Ex.No:1(B) VARIABLES AND OPERATOR
+# Ex.No:3(B) STRING BUFFER IN JAVA
 
 ## AIM:
-To write a Java program to get values of variables 'a' and 'b' and then check if both the conditions 'a < 50' and 'a < b' are true. [Class name is ‘Demo’]
+To develop a java program use append() method concatenates the given argument with this String and use stringbuffer class.
 
 ## ALGORITHM :
 1.	Start the program.
-2.	Import the necessary package 'java.util'
-3.	Define a class named 'Demo'
-4.	Implement the main method
-5.	Create a new instance of the 'Scanner' class named 'sc' to read user input
-6.	Read an integer 'a' from the user using the 'nextInt' method of 'sc'
-7.	Read another integer 'b' from the user using the 'nextInt' method of 'sc'
-8.	Check if 'a' is less than 50 or if 'a' is less than 'b'
-a)	If the condition is true, print "true" using the 'print' method of 'System.out'
-b)	If the condition is false, print "false" using the 'print' method of 'System.out'
-9.	End
-
-
+2.	Import `Scanner` and define class `concat`
+3.	In `main`:
+-	a) Create `Scanner` object `sc`
+-	b) Read two strings `a` and `b` from user input
+4.	Create a `StringBuffer` object `sb` initialized with string `a`
+5.	Append a space and string `b` to `sb`
+6.	Print the concatenated result from `sb`
+7.	End
 ## PROGRAM:
-
-```
+ ```
 /*
 Program to implement a variable and operators using Java
 Developed by: Nara Guna Susmitha
-RegisterNumber:  212224230176
+RegisterNumber: 212224230176 
 */
 ```
 
 ## Sourcecode.java:
+
 ```
 import java.util.*;
-public class Demo{
-    public static void main(String[] args)
-    {
-        Scanner input  = new Scanner(System.in);
-        int a = input.nextInt();
-        int b = input.nextInt();
-        if(a <  50 && a <  b)
-        {
-            System.out.print("true");
-        }
-        else
-        {
-            System.out.print("false");
-        }
-    }
+	    
+		
+	public class Assignment6 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String a =sc.nextLine();
+		String b =sc.nextLine();
+		String output;
+
+		if (a.length() < b.length()) 
+			output = a + b + a;
+		else
+			output = b + a + b;
+		
+		System.out.println(output);
+	}
+
 }
 ```
-
-
 ## OUTPUT:
 
-
-
+<img width="396" alt="Image" src="https://github.com/user-attachments/assets/6d1b7a6e-8a82-4e5e-86cb-5b7d741f077a" />
 
 ## RESULT:
-Thus, the Java program to get values of variables 'a' and 'b' and then check if both the conditions 'a < 50' and 'a < b' are true is created successfully.
+Thus the java program use append() method concatenates the given argument with this String and use stringbuffer class was executed successfully.
